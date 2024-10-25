@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinay Portfolio</title>
+    <link rel="stylesheet" href="./CSS/Styles.css">
+    <script src="./JS/NavBar.js"></script>
+    <script src="./JS/Info.js"></script>
+    <script src="./JS/Training.js"></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+        <ul class="sidebar">
+            <li onclick="hideSideBar()"> <a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a> </li>
+            <li> <a href="#information" onclick="smoothScroll('information'), hideSideBar()">Home</a> </li>
+            <li> <a href="#skillsHeader" onclick="smoothScroll('skillsHeader'), hideSideBar()">Skills</a> </li>
+            <li> <a href="#projectheader" onclick="smoothScroll('projectheader'), hideSideBar()">Projects</a> </li>
+            <li> <a href="#contact-div" onclick="smoothScroll('contact-div'), hideSideBar()">Contact</a> </li>
+        </ul>
+        <ul>
+            <li class="HideOnMobile"> <a href="#information" onclick="smoothScroll('information')">Home</a> </li>
+            <li class="HideOnMobile"> <a href="#skillsHeader" onclick="smoothScroll('skillsHeader')">Skills</a> </li>
+            <li class="HideOnMobile"> <a href="#projectheader" onclick="smoothScroll('projectheader')">Projects</a> </li>
+            <li class="HideOnMobile"> <a href="#contact-div" onclick="smoothScroll('contact-div')">Contact</a> </li>
+            <li class="menu-btn" onclick=showSideBar()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a> </li>
+        </ul>
+    </nav>
+
+    <!-- Information -->
+
+    <info id="information" class="info-div">
+        <div class="about">
+            <span class="about-me">I am <span class="my-name">Vinay</span> a MERN Stack developer with a passion for building innovative applications. My expertise lies in utilizing technologies like React, Express.js, Node.js, and MongoDB to create robust and scalable solutions. Developed the frontend using React-Expo, ensuring a smooth and intuitive user experience. Implemented backend functionalities using MongoDB for database management. Successfully deployed the application, resulting in increased user engagement and positive feedback.</span>
+        </div>
+        <div><img class="my-image" src="./images/vinay.jpg" onclick="location.reload()"/></div>
+    </info>
+
+    <links class="my-links">
+        <img onclick="redirectToGithub()" class="icons" src="./images/github-icon.png" alt="Github">
+        <img onclick="redirectToLinkedIn()" class="icons" src="./images/linkedin-icon.jpeg" alt="LinkedIn">
+        <img onclick="redirectToLeetCode()" class="icons" src="./images/leetcode-icon.png" alt="LeetCode">
+        <img onclick="redirectToInstagram()" class="icons" src="./images/instagram-icon.webp" alt="Instagram">
+    </links>
+
+    <resume>
+        <div class="resume" onclick="openResume()">Resume</div>
+    </resume>
+
+    <h1 id="skillsHeader">Skills</h1>
+
+    <skills id="my-skills">
+        <span>Programming Languages</span>
+        <div class="spacing">
+            <img onclick="redirectToJava()" src="./images/java.png"/>
+            <img onclick="redirectToCpp()" src="./images/cpp.png"/>
+            <img onclick="redirectToJavaScript()" src="./images/javascript.png"/>
+        </div>
+        <span>Frontend Development</span>
+        <div class="spacing">
+            <img onclick="redirectToHtml()" src="./images/html.png"/>
+            <img onclick="redirectToCss()" src="./images/css.png"/>
+        </div>
+        <span>DataBases</span>
+        <div class="spacing">
+            <img onclick="redirectToMongoDB()" src="./images/mogodb.svg"/>
+            <img onclick="redirectToMysql()" src="./images/mysql.png"/>
+        </div>
+        <div class="frame-and-back spacing">
+            <div>
+                <span>Backend Development</span>
+                <img onclick="redirectToNodeJS()" src="./images/node-js.png"/>
+            </div>
+        </div>
+    </skills>
+
+
+    <h1 id="projectheader">Projects</h1>
+
+    <projects id="my-projects">
+        <div class="project-1">
+            <div class="p-left">
+                <div class="p-header">
+                    <a href="https://play.google.com/store/apps/details?id=com.saiki1212.Letslearn" target="_blank">
+                        <span class="p-name">Tourism </span>
+                    </a>
+                    <div class="p-techno">
+                        <img onclick="redirectToReact()" src="./images/html.png"/>
+                        <img onclick="redirectToNodeJS()" src="./images/css.png"/>
+                        <img onclick="redirectToJavaScript()" src="./images/javascript.png"/>
+                    </div>
+                </div>
+                <div class="p-info">
+                    <span class="p-disc">>>  </span>
+                    <span class="p-disc"> The Tourism Management System is a web-based platform designed to help tourists explore various destinations, plan their trips, and manage bookings efficiently. This system provides an intuitive user interface for browsing tourist attractions, services, and packages offered by travel agencies.</span>
+                </div>
+                <br>
+                <div class="p-info">
+                    <span class="p-disc">>>  </span>
+                    <span class="p-disc">Home Page: A welcoming homepage with a visually appealing design showcasing the most popular tourist destinations.</span>
+                </div>
+                <br>
+                <div class="p-info">
+                    <span class="p-disc">>>  </span>
+                    <span class="p-disc">Tour Packages: Displays different travel packages based on budget, duration, and interests.
+                        Booking Form: Simple and intuitive form to collect customer information and booking inquiries.</span>
+                </div>
+                <br>
+                <div class="p-info">
+                    <span class="p-disc">>>  </span>
+                    <span class="p-disc">HTML: Structuring the layout of web pages, including headings, paragraphs, and image galleries.
+                        CSS: Styling the web pages with modern design principles, enhancing user experience with smooth navigation, layout, and responsive elements.</span>
+                </div>
+                     
+                
+            </div>
+            <div class="p-right">
+                <a href="https://play.google.com/store/apps/details?id=com.saiki1212.Letslearn" target="_blank">
+                    <img src="./images/vinaypro.png"/>
+                </a>
+            </div>
+        </div>
+        <div class="project-1">
+            <div class="p-left">
+                <div class="p-header">
+                        <span class="p-name">Algo-Simulator</span>
+                    </a>
+                    <div class="p-techno">
+                        <img onclick="redirectToJava()" src="./images/java.png"/>
+                    </div>
+                </div>
+                <div class="p-info">
+                    <span class="p-disc">>>  </span>
+                    <span class="p-disc">Algorithm Simulator is used to sort the given data in any of the sorting techniques (User
+                        choice).
+                    </span>
+                </div>
+                <br>
+                <div class="p-info">
+                    <span class="p-disc">>>  </span>
+                    <span class="p-disc">Experienced in implementing various sorting algorithms, showcasing strong arithmetic
+                        and problem-solving skills.</span>
+                </div>
+            </div>
+            <div class="p-right">
+                <a href="./algo-simulator.html" target="_blank">
+                    <img src="./images/algo-sim.png"/>
+                </a>
+            </div>
+        </div>
+    </projects>
+
+    <terminal>
+        <div id="my-terminal">
+            <div>Welcome to my website! Get started by typing ` help ` command below.</div>
+            <br>
+            <div id="output"></div>
+            <br>
+            <div id="input-container">
+                <label for="command-input" id="prompt">$ Vinay/portfolio ~ >> </label> <input type="text" id="command-input" autocomplete="off">
+            </div>
+        </div>
+    </terminal>
+
+    <contact id="contact-div">
+        <h1 class="contact-text-1">Contact me</h1>
+        <span class="contact-text-2">Feel free to reach out to me for job opportunities, freelance projects, or any other inquiries you may have. I am excited to hear from you and explore potential collaborations. Let us connect and create something amazing together!</span>
+        <div class="contact-container">
+            <div class="name-email-container">
+                <input class="contact-name" type="text" id="name" autocomplete="off" placeholder="Name">
+                <input class="contact-email" type="email" id="email" autocomplete="off" placeholder="Email">
+            </div>
+            <input class="contact-title contact-same" type="text" id="title" autocomplete="off" placeholder="Title">
+            <input class="contact-message contact-same" type="text" id="message" autocomplete="off" placeholder="Message">
+            <a href="mailto:bommaganivinay123@gmail.com?subject=For Placement/InternShip...." class="contact-btn contact-same" onclick="return validateForm()">Send</a>
+
+        </div>
+        <alternate>
+            <h1>[OR]</h1>
+            <div onclick="(window.location.href = 'mailto:bommaganivinay123@gmail.com')">
+                <span class="contact-text-4">MAIL ME</span>
+                <my-mail>
+                    <img src="./images/email.png"/> 
+                    <span class="contact-text-5">bommaganivinay123@gmail.com</span>
+                </my-mail>
+            </div>
+        </alternate>
+    </contact>
+    
+</body>
+</html>

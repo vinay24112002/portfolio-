@@ -1,0 +1,200 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+.info-div{
+    /* width: 100%; */
+    /* background-color: rgb(181, 104, 104); */
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    align-items: center;
+    margin-top: 5vh;
+    padding: 10vh 10% 10vh 5%;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* background-color: rgb(227, 35, 35); */
+    height: 100%;
+    gap: 5vh;
+}
+
+.my-image {
+    width: 28vw;
+    height: 28vw;
+    border-radius: 30vw;
+}
+
+.my-image:hover{
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.about-me {
+    font-size: 2.1ch;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:400;
+    padding: 0% 10% 0% 0%;
+    /* text-align:left; */
+    /* color: forestgreen; */
+}
+
+.my-name {
+    font-size: 5ch;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.leet-header {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    font-size: 4ch;
+}
+
+.leet-data-container {
+    border:1px solid rgb(246, 244, 244);
+    border-radius: 8px;
+    padding: 1% 2% 1% 2%;
+    width: 50%;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.2);
+    /* background-color: rgb(55, 255, 0); */
+}
+
+.leet-data {
+    /* background-color: blue; */
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.leet-data p, span {
+    font-size: 1.5vw;
+}
+
+.problems-solved {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3ch;
+    font-weight: 500;
+}
+
+.leet-data div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 4vw;
+    height: 4vw;
+    background-color: rgb(247, 250, 250);
+    padding: 1.5% 7% 1.5% 7%;
+    border-radius: 8px;
+}
+
+.leet-easy {
+    color: rgb(88, 184, 185);
+}
+.leet-data-easy:hover {
+    background-color: rgb(227, 249, 249);
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.leet-medium {
+    color: rgb(242, 186, 63);
+}
+.leet-data-medium:hover {
+    background-color: rgb(251, 241, 223);
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.leet-hard {
+    color: rgb(226, 74, 65);
+}
+.leet-data-hard:hover {
+    background-color: rgb(249, 226, 225);
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+@media (max-width: 630px) {
+    .info-div{
+        flex-direction:column-reverse;
+        margin-top: 5vh;
+        padding-top: 0vh;
+    }
+    .my-image {
+        width: 60vw;
+        height: 60vw;
+        border-radius: 30vw;
+        /* background-color: blueviolet; */
+    }
+}
+
+.my-links {
+    /* background-color: blueviolet; */
+    width: 100%;
+    height: 100vh;
+    margin-left: 5%;
+    margin-top: 3vh;
+    justify-content: space-evenly;
+}
+
+.icons {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    margin-right: 1%;
+    margin-top: 3vh;
+    /* padding: 1% 1% 0% 1%; */
+    /* background-color: rgb(49, 226, 43); */
+}
+
+.icons:hover {
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.9);
+}
+
+.resume:hover {
+    cursor: pointer;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.resume {
+    display: flex;
+    width: 15vw;
+    margin-left: 5%;
+    margin-top: 3vh;
+    background-color: rgb(238, 241, 241);
+    padding: 1vh 2vw 1vh 2vw;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 2vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+
+@media (max-width: 800px) {
+    .leet-data-container{
+        width: 100%;
+        /* height: 10vh; */
+    }
+    .leet-data div {
+        width: 5vw;
+        height: 5vw;
+        border-radius: 1vw;
+    }
+    .leet-data p, span {
+        font-size: 3vw;
+    }
+    .problems-solved {
+        font-size: 3vw;
+    }
+    .leet-header {
+        font-size: 4vw;
+    }
+}
